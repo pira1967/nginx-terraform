@@ -9,16 +9,17 @@ Provision a basic NGINX web server using:
 - Application Load Balancer (ALB) forwarding HTTP to EC2
 
 ## Prerequisites
-- Terraform CLI
-- AWS CLI configured (`aws configure`)
-- SSH key pair (e.g., `~/.ssh/id_ed25519.pub`)
+
+- **Terraform CLI** installed on my local machine  
+- **AWS CLI** installed and configured (`aws configure`) with appropriate credentials  
+- An **SSH key pair** ( `~/.ssh/id_ed25519.pub`) to access the EC2 instance  
 
 ## Usage
 
 ```bash
 # Clone repo
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/pira1967/nginx-terraform.git
+cd nginx-terraform
 
 # Initialize
 terraform init
